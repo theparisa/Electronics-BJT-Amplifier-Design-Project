@@ -1,0 +1,51 @@
+
+**** 01/11/25 22:06:02 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Q_point"  [ C:\Users\EMTOO\Desktop\Papers\p1-schematic1-q_point.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "p1-schematic1-q_point.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 1k 1000k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC "..\..\..\public\music\p1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING p1-SCHEMATIC1.net ****
+* source P1
+Q_Q3         N00803 R_IN_NET N00850 BC368 
+R_RB5         N00776 R_IN_NET  137.839k  
+R_RB6         0 R_IN_NET  360k  
+V_V1         VIN 0 DC 0Vdc AC 1Vac 
+R_RE3         0 N00850  2.5k  
+R_RC3         N00803 N00776  1k  
+R_R5         VOUT 0  1k  
+C_C4         VIN R_IN_NET  1000U  
+C_C5         N00850 VOUT  1000U  
+V_VCC         N00776 0 10Vdc
+V_V4         M_UN0001 M_UN0002  
++SIN 0 5 10k 0 0 0
+
+**** RESUMING p1-schematic1-q_point.sim.cir ****
+.END
+
+ERROR -- Less than 2 connections at node M_UN0001
+ERROR -- Less than 2 connections at node M_UN0002
+ERROR -- Node M_UN0001 is floating
+ERROR -- Node M_UN0002 is floating

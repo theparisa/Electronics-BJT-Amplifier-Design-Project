@@ -1,0 +1,128 @@
+
+**** 01/11/25 23:51:14 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Q_point"  [ C:\Users\EMTOO\Desktop\Papers\p1-schematic1-q_point.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "p1-schematic1-q_point.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 1 1000k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC "..\..\..\public\music\p1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING p1-SCHEMATIC1.net ****
+* source P1
+Q_Q3         N00803 R_IN_NET N00850 BC368 
+R_RB5         N00776 R_IN_NET  137.839k  
+R_RB6         0 R_IN_NET  360k  
+R_RE3         0 N00850  2.5k  
+R_RC3         N00803 N00776  1k  
+R_RL         VOUT 0  1.10996k  
+C_C4         VIN R_IN_NET  1000U  
+C_C5         N00850 VOUT  1000U  
+V_VCC         N00776 0 10Vdc
+V_V129         VIN 0  
++SIN 0 5 10k 0 0 0
+
+**** RESUMING p1-schematic1-q_point.sim.cir ****
+.END
+
+**** 01/11/25 23:51:14 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Q_point"  [ C:\Users\EMTOO\Desktop\Papers\p1-schematic1-q_point.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC368           
+               NPN             
+          IS   14.060000E-15 
+          BF  187.6          
+          NF    1            
+         VAF  100            
+         IKF    4.103        
+         ISE  137.200000E-15 
+          NE    1.468        
+          BR    4.541        
+          NR    1            
+         IKR    1.701        
+         ISC   44.130000E-15 
+          NC    1.471        
+          NK     .5507       
+          RC     .091        
+         CJE  156.000000E-12 
+         VJE     .5          
+         MJE     .3333       
+         CJC   52.240000E-12 
+         VJC     .5          
+         MJC     .3333       
+          TF  964.800000E-12 
+         XTF    1.001000E+03 
+         VTF   10            
+         ITF  595.3          
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 01/11/25 23:51:14 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Q_point"  [ C:\Users\EMTOO\Desktop\Papers\p1-schematic1-q_point.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VOUT)    0.0000  (N00776)   10.0000 (N00803)    8.0135     
+
+(N00850)    5.0055 (R_IN_NET)    5.6689                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -2.018E-03
+    V_V129       0.000E+00
+
+    TOTAL POWER DISSIPATION   2.02E-02  WATTS
+
+
+WARNING -- No AC sources -- AC Sweep ignored
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

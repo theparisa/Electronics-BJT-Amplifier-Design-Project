@@ -1,0 +1,11 @@
+* PSpice Model Editor - Version 9.2
+
+*$
+.model BC368    NPN(Is=14.06f Xti=3 Eg=1.11 Vaf=100 Bf=250 Ise=137.2f
++               Ne=1.468 Ikf=4.103 Nk=.5507 Xtb=1.5 Br=4.541 Isc=44.13f
++               Nc=1.471 Ikr=1.701 Rc=91m Cjc=52.24p Mjc=.3333 Vjc=.5 Fc=.5
++               Cje=156p Mje=.3333 Vje=.5 Tr=10n Tf=964.8p Itf=595.3 Xtf=1.001K
++               Vtf=10)
+*		PHILIPS		pid=bc368	case=TO92
+*		91-08-02 dsq
+*$

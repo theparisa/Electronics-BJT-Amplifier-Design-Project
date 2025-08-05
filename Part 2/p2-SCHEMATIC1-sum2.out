@@ -1,0 +1,135 @@
+
+**** 01/12/25 09:40:48 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-sum2"  [ C:\Users\Public\Music\p2-SCHEMATIC1-sum2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "p2-SCHEMATIC1-sum2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 10k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\p2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING p2-SCHEMATIC1.net ****
+* source P2
+R_RB3         VIN_2 N00776  480k  
+R_RB5         N00776 VIN_3  137.839k  
+C_C4         VIN_3 VOUT_2  1u  
+R_RB6         0 VIN_3  360k  
+R_RE3         0 N00850  2.5k  
+C_C3         VIN_2 N10830  1u  
+R_RC3         N00803 N00776  1k  
+R_RL         VOUT_3 0  1.10996k  
+V_Vi         N10830 0 DC 0Vdc AC 1Vac 
+Q_Q2         VOUT_2 VIN_2 N09502 Q2N4355
+C_C5         N00850 VOUT_3  1000U  
+V_VCC         N00776 0 10Vdc
+R_RE2         N00776 N09502  0.75k  
+R_RB4         0 VIN_2  160k  
+Q_Q3         N00803 VIN_3 N00850 BC368 
+R_RC2         0 VOUT_2  0.241k  
+
+**** RESUMING p2-SCHEMATIC1-sum2.sim.cir ****
+.END
+
+**** 01/12/25 09:40:48 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-sum2"  [ C:\Users\Public\Music\p2-SCHEMATIC1-sum2.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N4355         BC368           
+               PNP             NPN             
+          IS   12.270000E-12   14.060000E-15 
+          BF  194.8           187.6          
+          NF    1               1            
+         VAF  100             100            
+         IKF    1.123           4.103        
+         ISE   12.270000E-12  137.200000E-15 
+          NE    1.649           1.468        
+          BR    1.184           4.541        
+          NR    1               1            
+         IKR                    1.701        
+         ISC                   44.130000E-15 
+          NC                    1.471        
+          NK                     .5507       
+          RB   10                            
+          RC     .6              .091        
+         CJE  106.700000E-12  156.000000E-12 
+         VJE                     .5          
+         MJE     .5168           .3333       
+         CJC   48.280000E-12   52.240000E-12 
+         VJC                     .5          
+         MJC     .5615           .3333       
+          TF  867.000000E-12  964.800000E-12 
+         XTF     .8             1.001000E+03 
+         VTF    2              10            
+         ITF     .2           595.3          
+          TR  474.500000E-09   10.000000E-09 
+         XTB    1.5             1.5          
+          CN    2.2             2.42         
+           D     .52             .87         
+
+
+**** 01/12/25 09:40:48 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-sum2"  [ C:\Users\Public\Music\p2-SCHEMATIC1-sum2.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(VIN_2)    5.7078  (VIN_3)    5.6689  (N00776)   10.0000 (N00803)    8.0135     
+
+(N00850)    5.0055 (N09502)    6.2199 (N10830)    0.0000 (VOUT_2)    1.2082     
+
+(VOUT_3)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vi         0.000E+00
+    V_VCC       -7.067E-03
+
+    TOTAL POWER DISSIPATION   7.07E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .06
+

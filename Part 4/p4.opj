@@ -1,0 +1,23 @@
+(ExpressProject "p4"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (NoModify)
+    (Folder "Library"
+      (File ".\p4.olb"
+        (DisplayName ".\p4.olb")
+        (Type "Schematic Library"))
+      (Sort User)))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (File ".\p4.lib"
+        (DisplayName ".\p4.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice"))

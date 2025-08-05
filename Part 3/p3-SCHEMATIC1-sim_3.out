@@ -1,0 +1,146 @@
+
+**** 01/12/25 12:07:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-sim_3"  [ C:\Users\Public\Music\p3-SCHEMATIC1-sim_3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "p3-SCHEMATIC1-sim_3.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 10k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\p3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING p3-SCHEMATIC1.net ****
+* source P3
+R_RB2         0 N14317  3.85k  
+C_C_out         VOUT_3 N24128  1000U  
+R_RB3         VIN_2 N00776  480k  
+R_RB5         N00776 VIN_3  137.839k  
+R_Rs         N14450 0  50  
+C_C4         VOUT_2 VIN_3  1u  
+R_RB6         0 VIN_3  360k  
+R_RE1         0 VIN_1  500  
+R_RE3         0 N00850  2.5k  
+C_C2         0 N14317  1u  
+R_RC3         N00803 N00776  1k  
+C_C3         VOUT_1 VIN_2  1u  
+V_Vs         N24128 0 DC 0Vdc AC 1Vac 
+R_RL         VOUT_3 0  1.10996k  
+C_C1         N14450 VIN_1  10u  
+C_C5         N00850 VOUT_3  1u  
+V_VCC         N00776 0 10Vdc
+Q_Q1         VOUT_1 N14317 VIN_1 BC368 
+R_RE2         N00776 N09502  0.75k  
+R_RB4         0 VIN_2  160k  
+R_RC1         VOUT_1 N00776  29k  
+Q_Q3         N00803 VIN_3 N00850 BC368 
+R_RB1         N14317 N00776  50k  
+Q_Q2         VOUT_2 VIN_2 N09502 Q2N4355
+R_RC2         0 VOUT_2  0.241k  
+
+**** RESUMING p3-SCHEMATIC1-sim_3.sim.cir ****
+.END
+
+**** 01/12/25 12:07:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-sim_3"  [ C:\Users\Public\Music\p3-SCHEMATIC1-sim_3.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC368           Q2N4355         
+               NPN             PNP             
+          IS   14.060000E-15   12.270000E-12 
+          BF  187.6           194.8          
+          NF    1               1            
+         VAF  100             100            
+         IKF    4.103           1.123        
+         ISE  137.200000E-15   12.270000E-12 
+          NE    1.468           1.649        
+          BR    4.541           1.184        
+          NR    1               1            
+         IKR    1.701                        
+         ISC   44.130000E-15                 
+          NC    1.471                        
+          NK     .5507                       
+          RB                   10            
+          RC     .091            .6          
+         CJE  156.000000E-12  106.700000E-12 
+         VJE     .5                          
+         MJE     .3333           .5168       
+         CJC   52.240000E-12   48.280000E-12 
+         VJC     .5                          
+         MJC     .3333           .5615       
+          TF  964.800000E-12  867.000000E-12 
+         XTF    1.001000E+03     .8          
+         VTF   10               2            
+         ITF  595.3              .2          
+          TR   10.000000E-09  474.500000E-09 
+         XTB    1.5             1.5          
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 01/12/25 12:07:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-sim_3"  [ C:\Users\Public\Music\p3-SCHEMATIC1-sim_3.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(VIN_1)     .1029  (VIN_2)    5.7078  (VIN_3)    5.6689  (N00776)   10.0000     
+
+(N00803)    8.0135 (N00850)    5.0055 (N09502)    6.2199 (N14317)     .7072     
+
+(N14450)    0.0000 (N24128)    0.0000 (VOUT_1)    4.0935 (VOUT_2)    1.2082     
+
+(VOUT_3)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vs         0.000E+00
+    V_VCC       -7.457E-03
+
+    TOTAL POWER DISSIPATION   7.46E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .06
+

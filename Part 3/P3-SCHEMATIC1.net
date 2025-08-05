@@ -1,0 +1,26 @@
+* source P3
+R_RB2         0 N14317  3.85k  
+C_C_out         VOUT_3 N24128  1000U  
+R_RB3         VIN_2 N00776  480k  
+R_RB5         N00776 VIN_3  137.839k  
+R_Rs         N14450 0  50  
+C_C4         VOUT_2 VIN_3  1u  
+R_RB6         0 VIN_3  360k  
+R_RE1         0 VIN_1  500  
+R_RE3         0 N00850  2.5k  
+C_C2         0 N14317  1u  
+R_RC3         N00803 N00776  1k  
+C_C3         VOUT_1 VIN_2  1u  
+V_Vs         N24128 0 DC 0Vdc AC 1Vac 
+R_RL         VOUT_3 0  1.10996k  
+C_C1         N14450 VIN_1  10u  
+C_C5         N00850 VOUT_3  1u  
+V_VCC         N00776 0 10Vdc
+Q_Q1         VOUT_1 N14317 VIN_1 BC368 
+R_RE2         N00776 N09502  0.75k  
+R_RB4         0 VIN_2  160k  
+R_RC1         VOUT_1 N00776  29k  
+Q_Q3         N00803 VIN_3 N00850 BC368 
+R_RB1         N14317 N00776  50k  
+Q_Q2         VOUT_2 VIN_2 N09502 Q2N4355
+R_RC2         0 VOUT_2  0.241k  

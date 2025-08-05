@@ -1,0 +1,14 @@
+* source P4
+Q_Q1         N00618 N07511 N00801 BC368 
+R_RC         N00618 N00892  0.471k  
+R_RE         0 N00801  1k  
+V_Vs         N00877 0 DC 0Vdc AC 1Vac 
+R_RB1         VIN N00892  400k  
+R_RB         VIN N07511  0.4k  
+R_RB2         0 VIN  200k  
+R_RL         0 VOUT  0.1k  
+R_Rs         N00877 N00850  100  
+C_C1         N00850 VIN  1000U  
+V_VCC         N00892 0 10Vdc
+C_C2         N00618 VOUT  1000U  
+C_C3         N00801 0  1000U  
