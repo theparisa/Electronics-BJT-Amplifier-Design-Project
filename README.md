@@ -10,7 +10,7 @@ This project teaches how to build a complete, high-performance amplifier by conn
 * Validates theoretical hand calculations against practical **PSpice** simulations.
 * Requires **designing for specific targets**, like a set input impedance or maximized output.
 
-
+## Designed Common-Emitter Amplifier
 
 <img width="503" height="442" alt="image" src="https://github.com/user-attachments/assets/bd04ac34-4580-44d6-b2ab-87f22efedc2f" />
 
